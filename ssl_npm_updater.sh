@@ -8,6 +8,7 @@
 #               durch und sendet einen Statusbericht per interner Mail.
 #               WICHTIG: Es müssen vorher die ssh-Keys ausgetauscht werden und 
 #               in NPM das reuse-key aktiviert werden!
+# Lizenz: MIT
 # ==============================================================================
 
 # ----------------- Konfiguration -----------------
