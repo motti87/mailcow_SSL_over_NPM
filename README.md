@@ -24,6 +24,12 @@ Damit der private Schlüssel bei der Erneuerung gleich bleibt und dein TLSA-Reco
    WICHTIG: einen Unterstich `_` verwenden, keinen Bindestrich `-` !
 4. Speichern und schließen.
 
+**Zusatztipp für DANE/TLSA (Key-Pinning):**  
+Auf eigene Verantwortung, damit man sich die suche nach dem Ordnername ersparten kann:  
+Damit der private Schlüssel bei allen Zertifikatsverlängerungen im NPM dauerhaft gleich bleibt, kann man das global aktivieren. Dazu einfach auf dem NPM-LXC die Datei `/etc/letsencrypt/cli.ini` öffnen (oder neu anlegen) und diese Zeile eintragen:  
+`reuse-key = True`  
+
+
 ### 2. SSH-Keys austauschen (Passwortloses SCP)
 Der Mailcow-LXC muss die Berechtigung haben, Dateien vom NPM-LXC ohne Passwort abzurufen.
 Auf dem **Mailcow-LXC** als `root` ausführen:  
