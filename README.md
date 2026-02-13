@@ -10,6 +10,12 @@ Da bei einer Umgebung mit nur einer öffentlichen IPv4-Adresse Port 80 und 443 v
 - **Integrierter Live-Test:** Prüft nach dem Neustart direkt auf Port 25, ob das neue Zertifikat von Postfix korrekt ausgeliefert wird.
 - **Passwortloser Mail-Versand:** Nutzt den internen Docker-Socket der Mailcow, um Status-E-Mails zu versenden (keine Klartext-Passwörter im Script nötig!).
 
+**FYI:**  
+Mailcow im LXC hatte ich damals über die das Bashclub-Script installiert:  
+https://github.com/bashclub/zamba-lxc-toolbox  
+Den NPM über tteck seine Helper-Scripts:  
+https://github.com/tteck/Proxmox
+
 ---
 
 ## 🚀 Einrichtung & Installation
